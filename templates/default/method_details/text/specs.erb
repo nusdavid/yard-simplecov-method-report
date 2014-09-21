@@ -1,0 +1,8 @@
+<% if h = object[:simplecov] %>
+
+Coverage:
+---------------
+ <% h.each_key do |type| %>
+<%= indent wrap("#{type}: " + h[type][:percent].round(1) + "%") %>
+ <% end %>
+<% if h = object[:simplecov] %>

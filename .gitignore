@@ -1,0 +1,4 @@
+.yardoc
+doc
+coverage
+yard-simplecov-method-report.gemspec-*.gem

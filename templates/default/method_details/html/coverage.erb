@@ -1,0 +1,12 @@
+<% if h = object[:simplecov] %>
+<div class="simplecov">
+  <div class="tags">
+    <h3>Coverage</h3>
+    <ol>
+    <% h.each_key do |x| %>
+      <li><%= x %>: <%= h[x][:percent].round(1)%></li>
+    <% end %>
+    </ol>
+  </div>
+</div>
+<% end %>
