@@ -7,7 +7,7 @@ require 'yard-simplecov-method-report'
 
 Gem::Specification.new do |s|
   s.name = "yard-simplecov-method-report.gemspec"
-  s.version = '0.0.1'
+  s.version = '0.0.2'
 
   s.summary = "YARD plugin to report coverage of methods"
   s.description = %q{
@@ -21,9 +21,9 @@ Gem::Specification.new do |s|
   s.email = "gam3@gam3.net"
   s.homepage = "https://github.com/gam3/yard-simplecov-method-report"
   s.require_paths = ["lib"]
-  s.rubyforge_project = "yard-minitest-spec"
   s.rubygems_version = "1.8.11"
   s.files = 'ChangeLog'
+  s.files += [ 'LICENSE' ]
   s.files += Dir['lib/*/*.rb'] + Dir['lib/*.rb']
   s.files += Dir['*.gemspec']
   s.files += Find.find('templates').select{ |f| f if FileTest.file?(f) }
