@@ -4,7 +4,7 @@
     <h3>Coverage</h3>
     <ol>
     <% h.each_key do |x| %>
-      <li><%= x %>: <%= h[x][:percent].round(1)%></li>
+      <li><%= x %>: <%= h[x].fetch(:percent, 0).round(1) %></li>
     <% end %>
     </ol>
   </div>
